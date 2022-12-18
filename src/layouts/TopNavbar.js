@@ -20,12 +20,20 @@ import { useTheme } from '@emotion/react';
 
 const ROUTES = [
   {
-    name: 'foo',
-    path: 'foo'
+    name: 'Home',
+    path: '/home'
   },
   {
-    name: 'bar',
-    path: 'bar'
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Portfolio',
+    path: '/portfolio'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
   }
 ];
 
