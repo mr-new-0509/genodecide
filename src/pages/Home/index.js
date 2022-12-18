@@ -1,16 +1,13 @@
 import React, { useContext, useState } from 'react';
-import { Box, Button, Card, CardContent, CardHeader, Grid, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardHeader, Grid, Stack, Table, TableBody, TableCell, TableHead, TableRow, TextField, Typography } from '@mui/material';
 import axios from 'axios';
 import { LoadingContext } from '../../contexts/LoadingContext';
+import { X_RAPID_API_HOST, X_RAPID_API_KEY } from '../../utils/constants';
 
 export default function Home() {
   const { openLoading, closeLoading } = useContext(LoadingContext);
 
   const [keyword, setKeyword] = useState('');
-  // const [locationInfo, setLocationInfo] = useState(null);
-  // const [metadata, setMetadata] = useState(null);
-  // const [companyMembers, setCompanyMembers] = useState(null);
-  // const [otherInfo, setOtherInfo] = useState(null);
   const [companyOfficers, setCompanyOfficers] = useState([]);
   const [otherData, setOtherData] = useState(null);
 
@@ -20,8 +17,8 @@ export default function Home() {
       url: 'https://mboum-finance.p.rapidapi.com/qu/quote/asset-profile',
       params: { symbol: keyword },
       headers: {
-        'X-RapidAPI-Key': '475a2f1601msh05846fe1e82ec86p14029ejsncbeaed1cc96c',
-        'X-RapidAPI-Host': 'mboum-finance.p.rapidapi.com'
+        'X-RapidAPI-Key': X_RAPID_API_KEY,
+        'X-RapidAPI-Host': X_RAPID_API_HOST
       }
     };
 
