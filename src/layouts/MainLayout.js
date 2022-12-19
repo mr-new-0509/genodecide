@@ -13,7 +13,7 @@ export default function MainLayout() {
         <TopNavbar />
         <Box flexGrow={1}>
           <Container maxWidth="xl">
-            <Outlet />
+            {/* <Outlet /> */}
           </Container>
         </Box>
         <Footer />
