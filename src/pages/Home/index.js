@@ -47,7 +47,7 @@ export default function Home() {
       </Typography>
       <Typography textAlign="center" mt={3}>
         Welcome to Genodecide, the ultimate tool for venture capitalist. Our comprehensive analytics and data provide you with the information you need to make informed decisions about your investments.<br />
-        Our risk assesment tool helps you identify potential risks associated with investments. We provide you with the information you meed to make informed investments
+        Our risk assesment tool helps you identify potential risks associated with investments. We provide you with the information you need to make informed investments
       </Typography>
 
       <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} mt={6}>
